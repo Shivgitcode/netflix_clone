@@ -6,12 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body class="m-0 p-0 box-border">
+  <body class="m-0 p-0 box-border overflow-x-hidden">
     <div
       class="w-screen h-screen bg-[url('assets/netfliximg.jpg')] bg-center bg-cover"
     >
       <div
-        class="w-screen h-screen bg-gradient-to-br to-[rgba(0,0,0,0.9)] from-[rgba(0,0,0,0.2)]"
+        class="w-screen h-screen bg-gradient-to-t from-[rgba(0,0,0,0.8)] from-0% via-[rgba(0,0,0,0)] via-60% to-[rgba(0,0,0,0.8)] to-100% bg-[rgba(0,0,0,0.4)]"
       >
         <div class="w-[67%] mx-auto px-[48px] py-[24px] h-fit">
           <div
@@ -176,7 +176,52 @@
             </div>
           </div>
         </div>
+        <div class="w-full bg-black z-10 border-t-8 border-[#232323] py-[72px]">
+          <div
+            class="mx-auto w-[67%] flex justify-center items-center flex-col"
+          >
+            <h1
+              class="w-full h-fit text-center text-[48px] font-[900] font-netflix text-white"
+            >
+              Frequently asked questions
+            </h1>
+            <ul class="w-full list-none text-white">
+              <li class="flex flex-col w-full gap-1">
+                <h3 class="p-6 flex bg-[#232323]">
+                  <button
+                    class="bg-none border-none w-full flex justify-between"
+                    id="btn"
+                  >
+                    <span
+                      class="text-2xl text-center w-fit font-normal font-netflix"
+                      >What is Netflix?</span
+                    >
+                    <img
+                      src="./assets/plus-large-svgrepo-com.svg"
+                      alt=""
+                      class="w-8"
+                    />
+                  </button>
+                </h3>
+                <div class="flex flex-col p-6 gap-4 bg-[#232323]" id="div1">
+                  <p class="font-netflix text-[24px]">
+                    Netflix is a streaming service that offers a wide variety of
+                    award-winning TV shows, movies, anime, documentaries and
+                    more – on thousands of internet-connected devices.
+                  </p>
+                  <p class="font-netflix text-[24px]">
+                    You can watch as much as you want, whenever you want,
+                    without a single ad – all for one low monthly price. There's
+                    always something new to discover, and new TV shows and
+                    movies are added every week!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
