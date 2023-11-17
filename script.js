@@ -1,10 +1,38 @@
-const button = document.querySelector("#btn");
+const button = document.querySelectorAll(".btn");
 
-const div = document.querySelector("#div1");
+const div = document.querySelectorAll(".question");
 
-const span = document.querySelectorAll("span");
+const span = document.querySelector("#span1");
 
-button.addEventListener("click", () => {
-  div.classList.toggle("scale-y-0");
-  div.classList.toggle("h-[0px]");
+// button.forEach((event, but) => {
+//   console.log(event.target);
+//   if (button[index] === but) {
+//     but.addEventListener("click", () => {
+//       div.forEach((element) => {
+//         element.classList.toggle("invisible");
+//         element.classList.toggle("p-6");
+//         element.classList.toggle("max-h-[75rem]");
+//         element.classList.toggle("overflow-hidden");
+//         element.classList.toggle("text-left");
+//       });
+//     });
+//   }
+// });
+
+// element.classList.toggle("invisible");
+// element.classList.toggle("p-6");
+// element.classList.toggle("max-h-[75rem]");
+// element.classList.toggle("overflow-hidden");
+// element.classList.toggle("text-left");
+
+button.forEach((but, index) => {
+  but.addEventListener("click", (e) => {
+    const element = but.nextElementSibling;
+    element.classList.toggle("invisible");
+    element.classList.toggle("p-6");
+    element.classList.toggle("max-h-[75rem]");
+    element.classList.toggle("overflow-hidden");
+    element.classList.toggle("text-left");
+    element.classList.toggle("mb-1");
+  });
 });
